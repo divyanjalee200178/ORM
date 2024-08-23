@@ -12,10 +12,10 @@ public class FactoryConfiguration {
     public Session getSession;
     private SessionFactory sessionFactory;
     private FactoryConfiguration(){
-        Configuration configuration = new Configuration().configure().addAnnotatedClass(Student.class);
-        //Configuration configurations = new Configuration().configure().addAnnotatedClass(Teacher.class);
-        sessionFactory = configuration.buildSessionFactory();
-       //sessionFactory = configurations.buildSessionFactory();
+        //Configuration configuration = new Configuration().configure().addAnnotatedClass(Student.class);
+        Configuration configurations = new Configuration().configure().addAnnotatedClass(Teacher.class);
+        //sessionFactory = configuration.buildSessionFactory();
+        sessionFactory = configurations.buildSessionFactory();
     }
     public static FactoryConfiguration getInstance(){
         return (factoryConfiguration==null)?factoryConfiguration= new FactoryConfiguration():factoryConfiguration;
