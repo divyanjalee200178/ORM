@@ -9,8 +9,9 @@ import org.hibernate.cfg.Configuration;
 
 public class FactoryConfiguration {
     private static FactoryConfiguration factoryConfiguration;
-    public Session getSession;
+    //public Session getSession;
     private SessionFactory sessionFactory;
+
     private FactoryConfiguration(){
         //Configuration configuration = new Configuration().configure().addAnnotatedClass(Student.class);
         Configuration configurations = new Configuration().configure().addAnnotatedClass(Teacher.class);

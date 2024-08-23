@@ -33,7 +33,7 @@ public class Main {
 //        --------------------save,delete and update Teacher--------------------
         FullName fullName=new FullName("Saman","Perera");
         Teacher teacher=new Teacher();
-        teacher.setId(3);
+        teacher.setId(4);
         teacher.setName(fullName);
         teacher.setAddress("Kandy");
 
