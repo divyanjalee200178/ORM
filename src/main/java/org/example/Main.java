@@ -27,7 +27,7 @@ public class Main {
 
 
         //------------------------Get Student---------------------------
-//         Student=session.get(Student.class,1);
+//         Student students=session.get(Student.class,1);
 //        System.out.println(student.toString());
 
 //        --------------------save,delete and update Teacher--------------------
