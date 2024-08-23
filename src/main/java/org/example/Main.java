@@ -54,7 +54,7 @@ public class Main {
 
         // --------------------get Teacher--------------------
 
-//        Teacher teacher=session.get(Teacher.class,1);
+//        Teacher teachers=session.get(Teacher.class,1);
 //        System.out.println(teacher.toString());
     }
 }
