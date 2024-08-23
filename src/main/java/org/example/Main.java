@@ -11,7 +11,7 @@ public class Main {
     public static void main(String[] args) {
         Session session = FactoryConfiguration.getInstance().getSession();
 
-        //------------------------Save and Update Student---------------------------
+        //------------------------Save,delete and Update Student---------------------------
 //        FullName fullName=new FullName("Devi","Perera");
 //        Student student=new Student();
 //        student.setId(3);
@@ -20,36 +20,29 @@ public class Main {
 //
 //        Transaction transaction=session.beginTransaction();
 //        session.save(student);
-//        // session.update(teacher);
+//        session.update(teacher);
+//        session.delete(student);
 //        transaction.commit();
 //        session.close();
-
-
-        //------------------------Delete Student---------------------------
-
-//        session.delete(student);
 
 
         //------------------------Get Student---------------------------
 //         Student=session.get(Student.class,1);
 //        System.out.println(student.toString());
 
-//        --------------------save and update Teacher--------------------
-        FullName fullName=new FullName("Devid","Perera");
+//        --------------------save,delete and update Teacher--------------------
+        FullName fullName=new FullName("Saman","Perera");
         Teacher teacher=new Teacher();
-        teacher.setId(2);
+        teacher.setId(3);
         teacher.setName(fullName);
-        teacher.setAddress("Galle");
+        teacher.setAddress("Kandy");
 
         Transaction transaction=session.beginTransaction();
         session.save(teacher);
 //      session.update(teacher);
+//       session.delete(teacher);
         transaction.commit();
         session.close();
-
-       // --------------------Delete Teacher--------------------
-
-//        session.delete(teacher);
 
 
         // --------------------get Teacher--------------------
